@@ -57,7 +57,7 @@ header {
     text-decoration: none;
   }
 
-  .fan-list {
+  .fan-list ol {
     text-align: center;
     padding: 10px
   }
