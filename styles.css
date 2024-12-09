@@ -1,14 +1,16 @@
 * {
     border: 1px solid red;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: bold;
+body {
+    margin: 0;
     font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
-    margin: auto;
+    background: #f5f6f7;
+}
+
+.header {
     text-align: center; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 32px;
+    border-bottom: 4px solid black
 }
