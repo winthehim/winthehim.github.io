@@ -6,3 +6,13 @@
 body { 
     font-family: 'Comic Sans MS', cursive; 
 }
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
