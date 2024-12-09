@@ -18,6 +18,12 @@ header {
     position: fixed;
     top: 0;
   }
+  
+  section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
 
   h1, h2 {
     padding: 50px;
