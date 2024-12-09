@@ -2,8 +2,8 @@
     border: 1px solid red;
 }
 
-.page-title {
-    font-size: large;
+h1 {
+    font-size: 24px;
     font-weight: bold;
     font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
     margin: auto;
