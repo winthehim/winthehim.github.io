@@ -90,3 +90,9 @@ header {
   .the-facts {
     padding: 10px auto;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
