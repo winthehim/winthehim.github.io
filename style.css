@@ -57,6 +57,11 @@ header {
     text-decoration: none;
   }
 
+  .fan-list {
+    text-align: center;
+    padding: 10px
+  }
+
   .gallery {
     display: flex;
     flex-direction: row;
