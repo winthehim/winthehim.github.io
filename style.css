@@ -78,4 +78,7 @@ header {
     content: "";
     width: 350px;
   }
-  
+
+  .the-facts {
+    padding: 20px
+  }
