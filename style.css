@@ -57,9 +57,8 @@ header {
     text-decoration: none;
   }
 
-  .fan-list ol {
-    text-align: center;
-    padding: 10px
+  .nice-looking-list {
+    list-style-position: inside;
   }
 
   .gallery {
