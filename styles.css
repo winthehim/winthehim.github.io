@@ -31,14 +31,9 @@
       cursor: pointer;
   }
 
-article {
+section {
     border: red 1px solid;
-}
-
-body {
-    margin: 0;
-    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
-    background: #f5f6f7;
+    padding: 10px;
 }
 
 .header {
@@ -53,6 +48,26 @@ body {
 .header > h1{
     align-content: flex-start;
 }
+
+body {
+    margin: 10px;
+    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+    background: #f5f6f7;
+}
+
+section > h2 {
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+section > p {
+    text-align: start;
+    margin: 10px;
+    padding: 1rem;
+}
+
+
 
   @media (prefers-reduced-motion: no-preference) {
       * {
