@@ -18,3 +18,9 @@ body {
     border-bottom: 4px solid black
 }
 
+  @media (prefers-reduced-motion: no-preference) {
+      * {
+          scroll-behavior: smooth;
+      }
+  }
+
