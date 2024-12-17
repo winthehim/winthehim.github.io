@@ -83,7 +83,7 @@ h1 {
     top: -2px;
     left: 67px;
     margin-left: 50px;
-} 
+}
 
 
 
@@ -125,6 +125,15 @@ h1 {
 
 
 
+body {
+    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+    background: #FBE9D0;
+   /* max-width: 90%;
+    width: 100%;
+    margin:auto;
+    align-content: center; */
+}
+
 #main {
     transition: margin-right .5s;
     padding: 0 20px;
@@ -135,15 +144,6 @@ h2 {
     margin: 10px;
     text-align: left;
     padding: 1rem;
-}
-
-body {
-    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
-    background: #FBE9D0;
-   /* max-width: 90%;
-    width: 100%;
-    margin:auto;
-    align-content: center; */
 }
 
 section {
