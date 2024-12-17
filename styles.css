@@ -45,7 +45,21 @@ header {
 h1 {
     color: #90aead;
     cursor: default;
-    margin-left: 30px;
+    margin-left: 30px;    
+}
+
+h1 {
+    font-size: 2rem;
+
+    @media (width >= 40em) {
+        /* 640px */
+        font-size: 3rem;
+    }
+
+    @media (width >= 60em) {
+        /* 960px */
+        font-size: 4rem;
+    }
 }
 
 /* Side Menu */
