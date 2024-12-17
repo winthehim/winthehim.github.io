@@ -1,39 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width" content="initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>winthehim's website</title>
+        <script type="text/javascript" src="sideMenuScript.js"></script>
     </head>
     
 
     <body>
 
         <header>
-
-            <h1 id="webhead">winthehim's website</h1>
-
-                        <nav>
+            <h1>winthehim's website</h1>
+                        <!--<nav>
                             <ul>
                                 <li><a href="#temp-one">Temp one</a></li>
                                 <li><a href="#temp-two">Temp two</a></li>
                                 <li><a href="#temp-three">Temp three</a></li>
                             </ul>
-                        </nav>
+                        </nav> -->
 
+                        <div id="mySideMenu" class="sidemenu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <div class="patty"></div>
+                                <div class="patty"></div>
+                                <div class="patty"></div>
+                            </a>
+                            <a href="#temp-one">About me</a>
+                            <a href="#temp-two">Why web development</a>
+                            <a href="#temp-three">Showcase</a>
+                        </div>
+
+                <span onclick="openNav()" class="ham">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </span>
         </header>
 
-        <main>
-
+        <div id="main">
             <section class="sections" id="temp-one">
-                    <h2 >About me</h2>
-                    <p>my nickname is samsung. I have a BSC in Psychology from the Open University. I love anything horror, 80s slasher films and existential cosmic horror. </p>
+                    <h2>About me</h2>
+                    <p> 
+                        Somebody once told me <br>
+                        The world is gonna roll me <br>
+                        I ain't the sharpest tool in the shed <br>
+                        She was looking kind of dumb <br>
+                        With her finger and her thumb <br>
+                        In the shape of an "L" on her forehead<br>
+                        <br>
+                        Well, the years start coming <br>
+                        And they don't stop coming <br>
+                        Fed to the rules and I hit the ground running <br>
+                        Didn't make sense not to live for fun <br>
+                        Your brain gets smart, but your head gets dumb <br>
+                    </p>
             </section>
            
             <section class="sections" id="temp-two">
                     <h2>Why I want to get into web development</h2>
-                    <p>i want a job. I love learning and problem solving. Things such as woodworking, martial arts.</p>
+                        <p>
+                            So much to do, so much to see <br>
+                            So what's wrong with taking the back streets? <br>
+                            You'll never know if you don't go <br>
+                            You'll never shine if you don't glow <br>
+                            <br>
+                            Hey now, you're an all star <br>
+                            Get your game on, go play <br>
+                            Hey now, you're a rock star <br>
+                            Get the show on, get paid <br>
+                            And all that glitters is gold <br>
+                            Only shooting stars break the mold <br>
+                        </p>
             </section>
         
 
@@ -67,10 +108,13 @@
                                     Linking
                                 </li>
                             </ol>
+                        <li>
+                            I am not very good at graphic design
+                        </li>
                     </ul>
             </section>
 
-        </main>
+        </div>
 
         <footer>
             <p>

@@ -1,3 +1,7 @@
+/* General */
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -6,50 +10,26 @@ html, body {
     margin: 0;
 }
 
-section {
-    height: 100vh;
-   /* border: red 1px solid; */
-    
+@media (prefers-reduced-motion: no-preference) {
+      * {
+          scroll-behavior: smooth;
+      }
+  }
+
+@media screen and (max-height: 450px) {
+    .sidemenu {padding-top: 15px;}
+    .sidemenu a {font-size: 18px;}
 }
 
-  nav {
-      width: 50%;
-      max-width: 300px;
-      height: 50px;
-  }
 
-  nav > ul {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      align-items: center;
-      padding-inline-start: 0;
-      margin-block: 0;
-      height: 100%;
-  }
 
-  nav > ul > li {
-      color: #90aead;
-      margin: 0 0.2rem;
-      padding: 0.2rem;
-      display: block;
-  }
+/* Header | Side menu */
 
-  nav > ul > li:hover {
-      background-color: #90aead;
-      border-radius: 4px;
-      color: #FBE9D0;
-      cursor: pointer;
-  }
 
-  li > a {
-      color: inherit;
-      text-decoration: none;
-  }
 
- header {
+header {
     max-width: 100%;
-    width:100%;
+    width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -62,19 +42,115 @@ section {
     background-color: #244855;
 } 
 
-header h1 {
+h1 {
     color: #90aead;
+    cursor: default;
+    margin-left: 30px;
+}
+
+/* Side Menu */
+
+
+
+.sidemenu {
+    height: 100%; /* 100% full height*/
+    width: 0; /* 0 width that will be chanegd with javascript */
+    position: fixed; /* Stays in one place */
+    z-index: 1; /* Stays at the front or on top */
+    top: 0; /* Stays at the top of the page */
+    right: 0; /* Stays furthest to the right */
+    background-color: #0f2730; /* Navy blueish to match the header */
+    overflow-x: hidden; /* Hides the horizontal scroll */
+    padding-top: 60px; /* Places the content 50px from the top */
+    transition: 0.5s; /* Transition effect of slide for 0.5s */
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 32px; /* Box padding */
+    text-decoration: none; /* Box padding  */
+    font-size: 25px;
+    color: #90aead;
+    display: block; /* Starts on new line and takes up whole width*/
+    transition: 0.3s;
+}
+
+.sidemenu a:hover {
+    color: #ebf3f3;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: -2px;
+    left: 67px;
+    margin-left: 50px;
+} 
+
+
+
+/* Side menu buttons */
+
+
+
+.patty {
+    width: 35px;
+    height: 5px;
+    background-color: #90AEAD;
+    margin: 6px 0;
+    transition: background-color 0.5s;
+}
+
+.sidemenu .closebtn:hover .patty {
+    background-color: #ebf3f3;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: #90AEAD;
+    margin: 6px 0;
+    transition: background-color 0.5s;
+}
+
+.ham:hover .burger {
+    background-color: #ebf3f3;
+}
+
+.ham:hover {
+    cursor: pointer;
+}
+
+
+
+/* Main body */
+
+
+
+#main {
+    transition: margin-right .5s;
+    padding: 0 20px;
+    
+}
+
+h2 {
+    margin: 10px;
+    text-align: left;
+    padding: 1rem;
 }
 
 body {
     font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
     background: #FBE9D0;
+   /* max-width: 90%;
+    width: 100%;
+    margin:auto;
+    align-content: center; */
 }
 
-section > h2 {
-    margin: 10px;
-    text-align: center;
-    padding: 1rem;
+section {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    /* border: red 1px solid; */ 
 }
 
 section > p {
@@ -83,11 +159,16 @@ section > p {
     padding: 1rem;
 }
 
-
 .sections {
-    padding-top: 50px;
+    padding-top: 40px;
     margin-top: -50px;
 }
+
+
+
+/* Footer */
+
+
 
 footer {
     background-color: #244855;
@@ -108,11 +189,42 @@ footer, footer a {
     padding-top: 10px
  }
 
-@media (prefers-reduced-motion: no-preference) {
-      * {
-          scroll-behavior: smooth;
-      }
-  }
 
+ 
+/* Unused Nav */
 
+/* nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #90aead;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+nav > ul > li:hover {
+    background-color: #90aead;
+    border-radius: 4px;
+    color: #FBE9D0;
+    cursor: pointer;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+} */
 
