@@ -18,7 +18,8 @@
 nav {
     background-color: #325C62;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed;
+    width: 100vw;
     top: 0;
 }
 
@@ -50,7 +51,11 @@ nav .highlight:hover {
 }
 
 nav li:first-child {
-    margin-right: auto;
+   margin-right: auto;
+}
+
+.topbar {
+    overflow: hidden;
 }
 
 /* Sidebar */
@@ -79,8 +84,6 @@ nav li:first-child {
     width: 100%
 }
 
-
-
 @media (max-width: 400px) {
     .sidebar {
         width: 100%;
@@ -105,8 +108,6 @@ nav li:first-child {
 
 /* Main body */
 
-
-
 body {
     font-family: 'Times New Roman', Times, serif;
     background: #FBF6EF;
@@ -117,17 +118,35 @@ body {
     align-content: center; */
 }
 
+.heading {
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 0.7857142857142857rem + 2.857142857142857vw, 2.5rem);
+}
+
+.subheading {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.2857142857142857rem + 2.857142857142857vw, 2rem);
+}
+
 section {
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     max-width: 100%;
     padding-top: 50px;
-    margin-top: -50px;
     border: red 1px solid; 
 }
 
-
-
+.para {
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.2142857142857143rem + 2.142857142857143vw, 1.5rem);
+}
 
 
 /* Footer */
