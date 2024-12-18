@@ -13,7 +13,6 @@
   }
 
 
-
 /* Navbar */
 
 nav {
@@ -43,10 +42,6 @@ nav a {
     align-items: center;
     color: #FBF6EF;
     font-size: 1.2rem;
-
-    @media (width >= 72em) {
-        font-size: 2.4rem;
-    }
 }
 
 nav a:hover {
@@ -83,6 +78,8 @@ nav li:first-child {
 .sidebar a {
     width: 100%
 }
+
+
 
 @media (max-width: 400px) {
     .sidebar {
