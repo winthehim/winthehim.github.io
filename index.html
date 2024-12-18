@@ -4,61 +4,80 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>winthehim's website</title>
-        <script type="text/javascript" src="sideMenuScript.js"></script>
+        <script type="text/javascript" src="sidebarscript.js"></script>
     </head>
     
 
+
     <body>
 
-        <header>
-            <h1>winthehim's website</h1>
-                        <!--<nav>
-                            <ul>
-                                <li><a href="#temp-one">Temp one</a></li>
-                                <li><a href="#temp-two">Temp two</a></li>
-                                <li><a href="#temp-three">Temp three</a></li>
-                            </ul>
-                        </nav> -->
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#whytho">Why web development</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+            </ul>
+            <ul>
+                <li><a>winthehim's website</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#whytho">Why web development</a></li>
+                <li class="hideOnMobile"><a href="#showcase">Showcase</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>
+            </ul>
+        </nav>
 
-                        <div id="mySideMenu" class="sidemenu">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                                <div class="patty"></div>
-                                <div class="patty"></div>
-                                <div class="patty"></div>
-                            </a>
-                            <a href="#temp-one">About me</a>
-                            <a href="#temp-two">Why web development</a>
-                            <a href="#temp-three">Showcase</a>
-                        </div>
+        <section id="about">
+            <h2>About me</h2>
+        </section>
 
-                <span onclick="openNav()" class="ham">
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                </span>
-        </header>
+        <section id="whytho">
+            <h2>Why web development</h2>
+        </section>
 
-        <div id="main">
-            <section class="sections" id="temp-one">
-                    <h2>About me</h2>
-                    <p> 
-                        Somebody once told me <br>
-                        The world is gonna roll me <br>
-                        I ain't the sharpest tool in the shed <br>
-                        She was looking kind of dumb <br>
-                        With her finger and her thumb <br>
-                        In the shape of an "L" on her forehead<br>
-                        <br>
-                        Well, the years start coming <br>
-                        And they don't stop coming <br>
-                        Fed to the rules and I hit the ground running <br>
-                        Didn't make sense not to live for fun <br>
-                        Your brain gets smart, but your head gets dumb <br>
-                    </p>
-            </section>
+        <section id="showcase">
+            <h2>Showcase</h2>
+        </section>
+
+        <footer>
+            <p>
+                <a>Guess which one leads to my Github repo!</a> 
+                <br>
+                <a class="footerlinks" href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Left?</a>
+                <a class="footerlinks" href="https://github.com/winthehim/winthehim.github.io" target="_blank">Right?</a>
+            </p>
+        </footer>
+
+
+
+
+
+
+
+
+<!--
+        <div>
+
+                <section class="sections" id="temp-one">
+                        <h2>About me</h2>
+                        <p> 
+                            Somebody once told me <br>
+                            The world is gonna roll me <br>
+                            I ain't the sharpest tool in the shed <br>
+                            She was looking kind of dumb <br>
+                            With her finger and her thumb <br>
+                            In the shape of an "L" on her forehead<br>
+                            <br>
+                            Well, the years start coming <br>
+                            And they don't stop coming <br>
+                            Fed to the rules and I hit the ground running <br>
+                            Didn't make sense not to live for fun <br>
+                            Your brain gets smart, but your head gets dumb <br>
+                        </p>
+                </section>
            
             <section class="sections" id="temp-two">
                     <h2>Why I want to get into web development</h2>
@@ -76,7 +95,6 @@
                             Only shooting stars break the mold <br>
                         </p>
             </section>
-        
 
             <section class="sections" id="temp-three">
                     <h2>Showcase what I have learnt so far</h2>
@@ -115,12 +133,8 @@
             </section>
 
         </div>
-
-        <footer>
-            <p>
-            <a href="https://github.com/winthehim/winthehim.github.io">Link to my GitHub repo</a>
-            </p>
-        </footer>
+    
+         -->
 
     </body>
 

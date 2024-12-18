@@ -1,0 +1,113 @@
+/* Header */
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    position: fixed;
+    padding: 0 1rem;
+    top: 0;
+    left: 0;
+    background-color: #244855;
+} 
+
+h1 {
+    color: #90aead;
+    cursor: default;
+    margin-left: 15px;    
+} 
+
+
+
+
+h1 {
+    font-size: 2rem;
+
+    @media (width >= 40em) {
+        /* 640px */
+        font-size: 3rem;
+    }
+
+    @media (width >= 60em) {
+        /* 960px */
+        font-size: 4rem;
+    }
+} 
+    
+
+
+/* Side Menu */
+
+
+
+.sidemenu {
+    height: 100%; /* 100% full height*/
+    width: 0; /* 0 width that will be chanegd with javascript */
+    position: fixed; /* Stays in one place */
+    z-index: 1; /* Stays at the front or on top */
+    top: 0; /* Stays at the top of the page */
+    right: 0; /* Stays furthest to the right */
+    background-color: #0f2730; /* Navy blueish to match the header */
+    overflow-x: hidden; /* Hides the horizontal scroll */
+    padding-top: 150px; /* Places the content 60px from the top */
+    transition: 0.5s; /* Transition effect of slide for 0.5s */
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 32px; /* Box padding */
+    text-decoration: none; /* Box padding  */
+    font-size: 25px;
+    color: #90aead;
+    display: block; /* Starts on new line and takes up whole width*/
+    transition: 0.3s;
+}
+
+.sidemenu a:hover {
+    color: #ebf3f3;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 30px;
+    left: 67px;
+    margin-left: 50px;
+}
+
+
+/* Side menu buttons */
+
+
+
+.patty {
+    width: 35px;
+    height: 5px;
+    background-color: #90AEAD;
+    margin: 6px 0;
+    transition: background-color 0.5s;
+}
+
+.sidemenu .closebtn:hover .patty {
+    background-color: #ebf3f3;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: #90AEAD;
+    margin: 6px 0;
+    transition: background-color 0.5s;
+}
+
+.ham:hover .burger {
+    background-color: #ebf3f3;
+}
+
+.ham:hover {
+    cursor: pointer;
+}
+
