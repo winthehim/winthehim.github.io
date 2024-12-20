@@ -15,8 +15,13 @@
       1. Text
       2. Images
       3. Containers
+      4. Additional @media for different resolutions
 
    3. Clean up code/make more readable
+
+# To do (optional)
+
+   1. Light/dark mode with switch
 
 # Game Ideas
 
